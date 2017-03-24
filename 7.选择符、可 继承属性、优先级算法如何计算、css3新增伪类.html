@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css选择符、可继承样式、不可继承样式、优先级算法、css3新增伪类</title>
+	<style type="text/css">
+	.c1{color: red;}
+	.c2{color: blue;}
+	</style>
+</head>
+<body>
+	<strong>css选择符</strong>
+	<ul>
+		<li>id选择器</li>
+		<li>类选择器</li>
+		<li>标签选择器</li>
+		<li>相邻选择器</li>
+		<li>子选择器</li>
+		<li>通缉选择器</li>
+		<li>后代选择器</li>
+		<li>通配符选择器</li>
+		<li>属性选择器</li>
+		<li>伪类选择器</li>
+	</ul>
+	<strong>可继承样式</strong>
+	<ul>
+		<li>font-size</li>
+		<li>font-family</li>
+		<li>color</li>
+		<li>text-indent</li>
+	</ul>
+	<strong>不可继承样式</strong>
+	<ul>
+		<li>border</li>
+		<li>等</li>
+	</ul>
+	<strong>优先级算法</strong>
+	<ul>
+		<li>就近原则，同权重情况下样式定义最近者为准</li>
+		<li class="c2 c1">载入样式以最后载入的为准</li>
+		<li>!important > id >class > tag</li>
+		<li>!important比内联优先级高，但内联比id要高</li>
+	</ul>
+	<strong>css3新增伪类</strong>
+	<ul>
+		<li>enabled disabled控制表单控件的禁用状态</li>
+		<li>checked单选框或复选框被选中</li>
+	</ul>
+</body>
+</html>

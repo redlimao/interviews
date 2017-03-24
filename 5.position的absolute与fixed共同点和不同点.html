@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position的absolute和fixed的不同点和相同点</title>
+	<style type="text/css">
+
+	.block{width: 100px;height: 100px;background-color: red;float: left;}
+	.first:after{content:"";display: table;clear: both;}
+	li{color: green;}
+	li:nth-child(4){color: blue;}
+	li[data-val*="foo3"]{color: red;}
+	</style>
+</head>
+<body>
+	<strong>共同点：</strong>
+	<p>改变行内元素的呈现方式，display被置为block</p>
+	<p>让元素脱离普通流，不占据空间</p>
+	<p>默认会覆盖到非定位元素上</p>
+	<strong>不同点：</strong>
+	<p>absolute的根元素是可以设置的，而fixed的根元素是浏览器窗口</p>
+	<p>当你滚动网页的时候，fixed元素与浏览器窗口之间的距离是不变的。</p>
+	<div class="first">
+		<div class="block"></div>
+	</div>
+	<h1>HELLO</h1>
+	<ul>
+		<li>fool</li>
+		<li>fool</li>
+		<li data-val="foo3">fool</li>
+		<li>fool</li>
+		<li>fool</li>
+	</ul>
+</body>
+</html>
